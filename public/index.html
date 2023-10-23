@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Photoshoots</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Photoshoots</h1>
+
+    <form id="add-photoshoot-form">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="company">Company:</label>
+        <select id="company" name="company" required>
+            <option value="Pixelesque">Pixelesque</option>
+            <option value="TMC">TMC</option>
+        </select>
+
+        <label for="revenue">Revenue:</label>
+        <input type="number" id="revenue" name="revenue" required >
+
+        <label for="hours">Number of Hours:</label>
+        <input type="number" id="hours" name="hours">
+        
+        <label for="type_of_shoot">Type of Shoot:</label>
+        <select id="type_of_shoot" name="type_of_shoot" required>
+            <option value="Wedding">Wedding</option>
+            <option value="Engagement">Engagement</option>
+            <option value="Family Portrait">Family Portrait</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Headshot">Headshot</option>
+            <option value="Boudoir">Boudoir</option>
+        </select>
+
+        <button type="submit">Add Photoshoot</button>
+    </form>
+
+    <table id="photoshoot-table">
+        <tr>
+            <th>Date</th>
+            <th>Company</th>
+            <th>Revenue</th>
+            <th>Type of Shoot</th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
